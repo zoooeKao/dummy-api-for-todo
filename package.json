@@ -1,0 +1,27 @@
+{
+  "name": "dummy-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch  src/index.ts",
+    "test": "tsc --noEmit",
+    "db:seed": "tsx src/db/seed.ts"
+  },
+  "keywords": [],
+  "author": "t7yang <t7yang@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^1.11.4",
+    "@hono/valibot-validator": "^0.3.0",
+    "hono": "^4.4.7",
+    "lowdb": "^7.0.1",
+    "valibot": "^0.33.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  }
+}
