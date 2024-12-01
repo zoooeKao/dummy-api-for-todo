@@ -30,6 +30,8 @@ app.onError((err, ctx) => {
 
 // @ts-ignore
 const port = process.env.PORT || 4000;
+// const port = 4000;
 console.log(`Server is running on port ${port} at ${new Date()}`);
 
 serve({fetch: app.fetch, port: +port});
+// serve({fetch: app.fetch, port});
